@@ -1,0 +1,228 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Background */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('black.jpg'); /* Optional: Use your own image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  background-color: #000000;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #58c4da;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero button {
+  background-color: #58c4da;
+  color: #000;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background-color: #3aa7bd;
+  color: white;
+}
+
+/* Section Styling for all sections */
+section {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f5f5f5;
+  scroll-margin-top: 80px;
+}
+
+/* Headings */
+section h2 {
+  color: #58c4da;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+#about p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #f5f5f5;
+}
+
+#about h3 {
+  margin-top: 30px;
+  color: #58c4da;
+  font-weight: 600;
+}
+
+#about ul {
+  margin-top: 10px;
+  margin-left: 20px;
+  line-height: 1.7;
+  color: #f5f5f5;
+}
+
+#about ul li::marker {
+  color: #00bcd4;
+  font-size: 1.2rem;
+}
+
+/* Projects Section Styling (inherits section styles) */
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#projects li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #00bcd4;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  color: #f5f5f5;
+}
+
+/* Contact Section Styling (inherits section styles) */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f5f5f5;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #666161;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: #990a0a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3d3d3d;
+}
+
+/* Footer */
+footer {
+  background-color: #1b1b1b;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 40px;
+  max-width: 900px;
+  color: #aaa;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer a {
+  color: #aaa;
+  font-size: 25px;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+  color: #58c4da;
+  transform: scale(1.2);
+}
+
+.fa-instagram { color: #E4405F; }    /* Instagram’s popular pinkish-red */
+.fa-linkedin  { color: #0A66C2; }    /* LinkedIn blue */
+.fa-youtube   { color: #FF0000; }    /* YouTube bright red */
+
+
